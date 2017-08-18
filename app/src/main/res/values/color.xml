@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="half_transparent_black">#BB000000</color>
+    <color name="black_overlay">#66000000</color>
+    <color name="black">#000000</color>
+    <color name="yellow">#FFFF00</color>
+    <color name="gray">#999999</color>
+
+    <color name="dialogColor">#e8e8e8</color>
+    <color name="clickDown">#B3B3B3</color>
+    <color name="clickUp">#00000000</color>
+    <color name="boldTx">#f9f7dc</color>
+    <color name="colorserachText">#a0a0a0</color>
+
+    <color name="normal_image_loading_back">#DDDDDD</color>
+
+    <color name="search_cancel_button_color">#2AA6B9</color>
+
+    <color name="title_back_color_translucent">#C07EC5D3</color>
+    <color name="title_back_color">#7EC5D3</color>
+    <color name="tab_back_color">#7EC7D5</color>
+    <color name="tab_back_color_translucent">#C07EC7D5</color>
+    <color name="classify_back_color">#FCFAF2</color>
+    <color name="setting_back_color">#323C4D</color>
+
+    <color name="bg_selected_false">#362e2b</color>
+    <color name="bg_selected_true">#B1A482</color>
+
+    <color name="progressbar_color">#FFC500</color>
+
+    <color name="setting_text1">#7EC7D5</color>
+    <color name="setting_text2">#F3BD05</color>
+    <color name="setting_text3">#2AB961</color>
+    <color name="setting_button1">#7EC7D5</color>
+    <color name="setting_button2">#FC5720</color>
+
+    <color name="contact_back_color">#000000</color>
+
+    <color name="profile_text_color">#B1A481</color>
+    <color name="theme_brown">#B1A482</color>
+    <color name="theme_red">#FF5602</color>
+    <color name="theme_blue">#7EC7D5</color>
+    <color name="theme_blue_translucent">#DD8CC5D3</color>
+    <color name="theme_green">#74D764</color>
+    <color name="theme_gray">#D0D1C1</color>
+    <color name="theme_gray_translucent">#CCD0D1C1</color>
+    <color name="theme_orange">#F8C333</color>
+    <color name="theme_pink">#F4677F</color>
+    <color name="theme_white_translucent">#AAFFFFFF</color>
+
+    <color name="deep_orange">#F69B02</color>
+
+    <color name="gold">#DFE58D</color>
+    <color name="deep_blue">#64AFCC</color>
+
+    <color name="checkin_back_color">#493330</color>
+
+    <color name="theme_brown_translucent">#77B1A482</color>
+
+    <color name="register_button_color">#CCFFFF</color>
+    <color name="login_text_color">#0BA3C5</color>
+
+    <color name="goods_name_color">#69B2C4</color>
+
+    <color name="search_history_color">#28E267</color>
+
+    <color name="setting_divider_color">#3E4C63</color>
+
+    <color name="off_shelf_divider_color">#E0E1D5</color>
+
+    <color name="theme_deep_blue">#323C4D</color>
+    <color name="photo_container_back">#262E3B</color>
+
+    <color name="white">#FFFFFF</color>
+
+    <color name="edit_text_color">#808080</color>
+
+    <color name="need_text_color">#888888</color>
+
+    <color name="need_name_color">#C1B095</color>
+    <color name="need_detail_color">#AAAAAA</color>
+
+    <color name="normal_text_color">#AFAFAF</color>
+
+    <color name="contact_button_back">#51C0ED</color>
+
+    <color name="red">#FF0000</color>
+    <color name="blue">#0000FF</color>
+
+    <color name="pager_indicator_unchecked">#8CC3CD</color>
+
+    <color name="graphite">#333333</color>
+    <color name="pink">#ea4c89</color>
+    <color name="green">#8aba56</color>
+
+    <color name="transparent">#00000000</color>
+
+    <color name="text_color_main_tab_focus">#444f59</color>
+    <color name="text_color_main_tab_unfocus">#858c98</color>
+
+    <color name="windows_blue">#1aa1e2</color>
+
+    <color name="search_back_color">#EEFFFFFF</color>
+    <color name="search_history_item_color">#8FD498</color>
+    <color name="search_hot_item_color">#E9663D</color>
+
+    <color name="detail_back_color">#F6F7E4</color>
+    <color name="detail_price_back">#FC5720</color>
+
+    <color name="default_drawable_color">#DDDDDD</color>
+
+    <color name="category_button_pressed_color">#FFC500</color>
+
+    <color name="holo_blue">#FF33E5B5</color>
+
+
+    <color name="switch_selected_back_color">#666666</color>
+    <color name="switch_default_back_color">#444444</color>
+
+    <color name="guagua_back_color">#FE7960</color>
+
+    <color name="price_select_back_color">#71B7C6</color>
+</resources>

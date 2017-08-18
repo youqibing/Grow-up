@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rest_layout"
+    android:background="@mipmap/rest_bg">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/night_setting"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/setting" />
+
+        <RelativeLayout
+            android:layout_width="250dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/relativeLayout3">
+
+            <RelativeLayout
+                android:layout_width="250dp"
+                android:layout_height="48dp"
+                android:layout_marginRight="5dp"
+                android:background="@mipmap/headphoto"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:id="@+id/headPhoto_realtive">
+
+                <com.example.floatingaction.CircularImageView.CircularImage
+                    android:id="@+id/avatar"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="-1dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"/>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="190dp"
+                android:layout_height="60dp"
+                android:id="@+id/user_realtive"
+                android:layout_alignParentLeft="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="罗德"
+                    android:textColor="@color/dialogColor"
+                    android:textSize="20sp"
+                    android:id="@+id/nickName"
+                    android:layout_marginRight="10dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@mipmap/steps"
+                    android:scaleX="1.5"
+                    android:scaleY="1.5"
+                    android:layout_marginRight="10dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:id="@+id/steps" />
+
+                <TextView
+                    android:text="10000"
+                    android:textColor="@color/normal_image_loading_back"
+                    android:textSize="20sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/steps_rest_tx"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toStartOf="@+id/steps"
+                    android:layout_marginRight="10dp"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@mipmap/money"
+                    android:scaleX="1.5"
+                    android:scaleY="1.5"
+                    android:layout_marginRight="15dp"
+                    android:layout_toStartOf="@+id/steps_rest_tx"
+                    android:layout_alignParentBottom="true"
+                    android:id="@+id/money" />
+
+                <TextView
+                    android:textColor="@color/normal_image_loading_back"
+                    android:text="1000"
+                    android:textSize="20sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/money_tx"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toStartOf="@+id/money"
+                    android:layout_marginRight="10dp"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/booled"
+            android:layout_below="@+id/relativeLayout3"
+            android:layout_marginRight="20dp"
+            android:scaleX="1.3"
+            android:scaleY="1.3"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="20dp"
+            android:id="@+id/booled" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/booled"
+            android:background="@mipmap/food"
+            android:scaleX="1.3"
+            android:scaleY="1.3"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="30dp"
+            android:id="@+id/food" />
+
+        <me.zhouzhuo.zzhorizontalprogressbar.ZzHorizontalProgressBar
+            android:id="@+id/pbtwo"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/relativeLayout3"
+            android:layout_height="17dp"
+            android:layout_marginRight="70dp"
+            android:layout_marginLeft="180dp"
+            android:layout_marginTop="28dp"
+            app:zpb_padding="0dp"
+            app:zpb_pb_color="#e1403c"
+            app:zpb_bg_color="#aaaaaa"
+            app:zpb_max="100"
+            app:zpb_progress="30" />
+
+        <me.zhouzhuo.zzhorizontalprogressbar.ZzHorizontalProgressBar
+            android:id="@+id/pbone"
+            android:layout_width="match_parent"
+            android:layout_height="17dp"
+            android:layout_marginRight="70dp"
+            android:layout_marginLeft="180dp"
+            android:layout_marginTop="45dp"
+            app:zpb_padding="0dp"
+            app:zpb_pb_color="#df714d"
+            app:zpb_bg_color="#aaaaaa"
+            app:zpb_max="100"
+            app:zpb_progress="30"
+            android:layout_below="@+id/pbtwo"
+            android:layout_alignParentStart="true" />
+
+
+        <RelativeLayout
+            android:layout_width="250dp"
+            android:layout_height="100dp"
+            android:padding="10dp"
+            android:id="@+id/rest_dialog_layout"
+            android:background="@mipmap/rest_relative"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:layout_below="@+id/pbone">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/clock"
+                android:layout_centerVertical="true"
+                android:scaleY="1.5"
+                android:scaleX="1.5"
+                android:layout_marginLeft="30dp"/>
+
+            <TextView
+                android:text="hhhhhhhhhhhhhhhhhhhhhhh"
+                android:textColor="@color/dialogColor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rest_dialog_tx"
+                android:layout_marginBottom="10dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="55dp"/>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="200dp"
+            android:layout_height="70dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/selector_setting_black_button"
+            android:id="@+id/wake_relative"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true">
+
+            <ImageView
+                android:text="唤醒"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/bed"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:background="@mipmap/bed" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/dialogColor"
+                android:layout_centerVertical="true"
+                android:layout_alignLeft="@+id/bed"
+                android:layout_marginLeft="70dp"
+                android:text="点击唤醒"
+                android:textSize="20sp"/>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+
+</FrameLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="350dp"
+        android:layout_height="250dp"
+        android:layout_centerInParent="true"
+        android:paddingLeft="10dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:background="@drawable/corners_fooddialog_layout"
+        android:id="@+id/dialog_layout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="您已死亡"
+            android:textColor="@color/dialogColor"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:id="@+id/youdeaed"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="请选择复活模式"
+            android:textColor="@color/dialogColor"
+            android:textSize="17sp"
+            android:layout_below="@+id/youdeaed"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:layout_width="230dp"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/restart"
+            android:textSize="16sp"
+
+            android:text="重  新  来  过"
+            android:background="@mipmap/food_img_btn"/>
+
+        <Button
+            android:layout_width="230dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="20dp"
+            android:id="@+id/relive"
+            android:textSize="16sp"
+            android:text="复 活 (500金币)"
+            android:textColor="#e1ba51"
+            android:background="@mipmap/food_img_btn"
+            android:layout_above="@+id/restart"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

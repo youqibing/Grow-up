@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/backgroud_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="320dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/corners_fooddialog_layout"
+        android:id="@+id/popup_window">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="0dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/content_img" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/content_img"
+            android:layout_marginTop="15dp"
+            android:id="@+id/content_title"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/dialogColor"
+            android:text="麦当劳怪叔叔"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/content_title"
+            android:layout_marginTop="10dp"
+            android:id="@+id/content_tx"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:textSize="15dp"
+            android:textColor="@color/dialogColor"
+            android:text="          yibanlaishuoxingqinghenhao,shige chaojidahualaowocaozenmdabuchuzhongwena,ubuntuyoudu"/>
+
+        <Button
+            android:text="使用中"
+            android:textColor="@color/dialogColor"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:id="@+id/is_use_button"
+            android:textSize="15dp"
+            android:layout_marginBottom="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

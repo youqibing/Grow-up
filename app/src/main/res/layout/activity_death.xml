@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/animator">
+
+        <org.andengine.opengl.view.RenderSurfaceView
+            android:id="@+id/gameSurfaceView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"/>
+
+    </RelativeLayout>
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/setting" />
+
+    <RelativeLayout
+        android:layout_width="250dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/relativeLayout3">
+
+        <RelativeLayout
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="5dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/headPhoto_realtive">
+
+
+            <com.example.floatingaction.CircularImageView.CircularImage
+                android:id="@+id/avatar"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="-1dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"/>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="190dp"
+            android:layout_height="60dp"
+            android:id="@+id/user_realtive"
+            android:layout_alignParentLeft="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/dialogColor"
+                android:textSize="20sp"
+                android:id="@+id/nickName"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleX="1.5"
+                android:scaleY="1.5"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:id="@+id/steps" />
+
+            <TextView
+                android:textColor="@color/normal_image_loading_back"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/steps_tx"
+                android:layout_alignParentBottom="true"
+                android:layout_toStartOf="@+id/steps"
+                android:layout_marginRight="10dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleX="1.5"
+                android:scaleY="1.5"
+                android:layout_marginRight="15dp"
+                android:layout_toStartOf="@+id/steps_tx"
+                android:layout_alignParentBottom="true"
+                android:id="@+id/money" />
+
+            <TextView
+                android:textColor="@color/normal_image_loading_back"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/money_tx"
+                android:layout_alignParentBottom="true"
+                android:layout_toStartOf="@+id/money"
+                android:layout_marginRight="10dp"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

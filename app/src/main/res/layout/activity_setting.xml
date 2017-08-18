@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@mipmap/login"
+    android:id="@+id/activity_setting"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:id="@+id/relative"
+        android:layout_marginTop="40dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src ="@mipmap/attention_click"
+            android:layout_marginStart="45dp"
+            android:id="@+id/attention"
+            android:scaleY="1.2"
+            android:scaleX="1.2"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:text="通知与显示"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="35dp"
+            android:id="@+id/attention_tx" />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src ="@mipmap/password_click"
+            android:scaleY="1.2"
+            android:scaleX="1.2"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/password" />
+
+        <TextView
+            android:text="帐号与密码"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:id="@+id/password_tx" />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src ="@mipmap/help_click"
+            android:scaleY="1.2"
+            android:scaleX="1.2"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="65dp"
+            android:layout_centerVertical="true"
+            android:id="@+id/help" />
+
+        <TextView
+            android:text="关于与帮助"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="35dp"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:id="@+id/help_tx" />
+
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="320dp"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relative"
+        android:id="@+id/fragment"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true">
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/back_relative">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:scaleX="1.5"
+            android:scaleY="1.5"
+            android:background="@mipmap/back_img"
+            android:id="@+id/back_img" />
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,156 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="item_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingBottom">12dp</item>
+        <item name="android:paddingTop">12dp</item>
+    </style>
+
+    <style name="item_text_style">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:drawablePadding">10dp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="AnimBottom" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/popup_alpha_out</item>
+        <item name="android:windowExitAnimation">@anim/popup_alpha_in</item>
+    </style>
+
+    <style name="MyTabLayout" parent="Widget.Design.TabLayout">
+        <item name="tabIndicatorHeight">0dp</item>
+        <item name="tabTextColor">#aaa</item>
+        <item name="tabSelectedTextColor">#362e2b</item>
+    </style>
+    <!--tabIndicatorHeight是设置导航那个指示器高度为0,即这里不需要指示器-->
+    <!--<item name="tabPaddingStart">12dp</item>
+        <item name="tabPaddingEnd">12dp</item>
+        <item name="tabIndicatorColor">?attr/colorAccent</item>-->
+
+    <style name="horizontal_line_style">
+        <item name="android:background">@color/gray</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.4dp</item>
+    </style>
+
+    <style name="populayout_style">
+        <!-- 去黑边 -->
+        <item name="android:windowFrame">@null</item>
+        <!--设置是否可滑动  -->
+        <item name="android:windowIsFloating">true</item>
+        <!--设置是否透明  -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!--无标题  -->
+        <item name="android:windowNoTitle">true</item>
+        <!--窗口背景  -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!--是否变暗  -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!--点击空白部分activity消失  -->
+        <item name="android:windowCloseOnTouchOutside">true</item>
+        <!--动画设置 -->
+        <item name="android:windowAnimationStyle">@style/Anim_scale</item>
+    </style>
+
+    <style name="textDialog_style">
+        <!-- 去黑边 -->
+        <item name="android:windowFrame">@null</item>
+        <!--设置是否可滑动  -->
+        <item name="android:windowIsFloating">true</item>
+        <!--设置是否透明  -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!--无标题  -->
+        <item name="android:windowNoTitle">true</item>
+        <!--背景  -->
+        <item name="android:background">#00000000</item>
+        <!--窗口背景  -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!--是否变暗  -->
+        <item name="android:backgroundDimEnabled">false</item>
+        <!--点击空白部分activity消失  -->
+        <item name="android:windowCloseOnTouchOutside">true</item>
+        <!--动画设置 -->
+        <item name="android:windowAnimationStyle">@style/Anim_scale</item>
+    </style>
+
+    <style name="relivelayout_style">
+        <!-- 去黑边 -->
+        <item name="android:windowFrame">@null</item>
+        <!--设置是否可滑动  -->
+        <item name="android:windowIsFloating">true</item>
+        <!--设置是否透明  -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!--无标题  -->
+        <item name="android:windowNoTitle">true</item>
+        <!--窗口背景  -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!--是否变暗  -->
+        <item name="android:backgroundDimEnabled">false</item>
+        <!--点击空白部分activity消失  -->
+        <item name="android:windowCloseOnTouchOutside">false</item>
+        <!--动画设置 -->
+        <item name="android:windowAnimationStyle">@style/Anim_scale</item>
+    </style>
+
+
+    <style name="Anim_scale" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/scale_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/scale_out</item>
+        <item name="android:activityCloseEnterAnimation">@anim/scale_in</item>
+        <item name="android:activityCloseExitAnimation">@anim/scale_out</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="TextLabel" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Label color in TRUE state and bar color FALSE and TRUE State -->
+        <item name="colorControlActivated">#FFCC00</item>
+    </style>
+
+    <style name="Translucent" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimaryDark">#0288D1</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+
+    </style>
+
+    <style name="dialogWindowAnim" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/scale_dialog_enter</item>
+        <item name="android:windowExitAnimation">@anim/scale_dialog_out</item>
+    </style>
+
+    <style name="txDialogAnim" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/scale_in</item>
+        <item name="android:windowExitAnimation">@anim/scale_out</item>
+    </style>
+
+    <style name="myTransparent">
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Translucent</item>
+    </style>
+
+</resources>

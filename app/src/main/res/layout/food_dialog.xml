@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="350dp"
+        android:layout_height="400dp"
+        android:layout_centerInParent="true"
+        android:paddingLeft="10dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:background="@drawable/corners_fooddialog_layout"
+        android:id="@+id/popup_window">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/food_recycle"
+            android:layout_width="match_parent"
+            android:layout_height="300dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/purchase"
+            android:text="喂    食"
+            android:background="@mipmap/food_img_btn"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

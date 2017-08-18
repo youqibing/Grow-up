@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="100dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="5dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/food_relative"
+                android:background="@mipmap/food_dialog">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="13dp"
+                    android:layout_marginStart="60dp"
+                    android:id="@+id/relativeLayout2">
+
+                    <TextView
+                        android:id="@+id/food_tv_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:includeFontPadding="false"
+                        android:singleLine="true"
+                        android:text="Q萌小森林"
+                        android:textColor="#f9f7dc"
+                        android:textSize="18sp"
+                        android:textStyle="bold"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/hp"
+                        android:background="@mipmap/hp"
+                        android:scaleX="1.2"
+                        android:scaleY="1.2"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginRight="95dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="+75"
+                        android:textColor="#df714d"
+                        android:textSize="12sp"
+                        android:id="@+id/food_hp_tx"
+                        android:layout_alignBottom="@+id/food_tv_title"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginRight="75dp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/food_booled"
+                        android:background="@mipmap/food_booled"
+                        android:scaleX="1.2"
+                        android:scaleY="1.2"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginRight="40dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="+25"
+                        android:textColor="#df714d"
+                        android:textSize="12sp"
+                        android:id="@+id/food_booled_tx"
+                        android:layout_alignBottom="@+id/food_tv_title"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginRight="20dp" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/food_tv_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="2"
+                    android:singleLine="true"
+                    android:text="在森林里运动让人神清气爽呢"
+                    android:textColor="#f9f7dc"
+                    android:textSize="13sp"
+                    android:layout_marginTop="38dp"
+                    android:layout_alignStart="@+id/relativeLayout2" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@mipmap/money"
+                    android:scaleX="1.2"
+                    android:scaleY="1.2"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="45dp"
+                    android:layout_marginBottom="10dp"
+                    android:id="@+id/food_money"
+                    android:text="350"
+                    android:textColor="#f49c1e"
+                    android:textSize="16sp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:id="@+id/headPhoto_realtive">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:id="@+id/food_pic"
+                android:background="@mipmap/food_pic"
+                android:layout_centerInParent="true"/>
+
+            <ImageView
+                android:id="@+id/food_avatar"
+                android:padding="2dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerInParent="true" />
+
+        </RelativeLayout>
+
+
+</RelativeLayout>

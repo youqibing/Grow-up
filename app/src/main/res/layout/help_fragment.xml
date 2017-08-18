@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/about_us_relative">
+
+        <TextView
+            android:text="我们是有爱的互联网团队,爱玩爱闹,想和你一起发现新的世界!"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:lineSpacingMultiplier="1.2"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="@color/dialogColor"
+            android:id="@+id/one_tx" />
+
+        <TextView
+            android:text="如果你遇到什么有趣的事情,欢迎与我们分享,下一版的Grow up,由你来构造!"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:lineSpacingMultiplier="1.2"
+            android:textColor="@color/dialogColor"
+            android:layout_marginTop="3dp"
+            android:layout_below="@+id/one_tx"
+            android:layout_alignEnd="@+id/one_tx"
+            android:id="@+id/two_tx" />
+
+        <Button
+            android:text="好         的"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/two_tx"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="123dp"
+            android:background="@drawable/selector_setting_button"
+            android:id="@+id/ok" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/help_mian_relative">
+
+        <Button
+            android:text="关      于      作      品"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp"
+            android:textSize="15sp"
+            android:background="@drawable/selector_setting_button"
+            android:id="@+id/about_product" />
+
+        <Button
+            android:text="关      于      我      们"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/about_product"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:textSize="15sp"
+            android:background="@drawable/selector_setting_button"
+            android:id="@+id/about_us" />
+
+        <Button
+            android:text="联      系      我      们"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:background="@drawable/selector_setting_button"
+            android:layout_below="@+id/about_us"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:textSize="15sp"
+            android:id="@+id/contanct_us" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/contact_us_relative">
+
+        <RelativeLayout
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:background="@mipmap/login_edit"
+            android:layout_below="@+id/phoneNum_relative"
+            android:layout_marginTop="0dp"
+            android:id="@+id/contact_relative">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingLeft="20dp">
+
+                <EditText
+                    android:id="@+id/contact_edt"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:hint="留下您的联系方式(手机/邮件..)"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:textColorHint="@color/dialogColor"
+                    android:textColor="@android:color/white"
+                    android:imeOptions="actionSearch"
+                    android:singleLine="true"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="300dp"
+            android:layout_height="180dp"
+            android:background="@mipmap/tx_bg"
+            android:layout_centerHorizontal="true"
+            android:padding="20dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/contact_cotent_relative"
+            android:layout_below="@+id/contact_relative">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/contact_content"
+                android:background="@null"
+                android:hint="在这里留下想对我们说的话吧..."
+                android:textColorHint="@color/dialogColor"
+                android:textColor="@android:color/white"
+                android:textSize="16dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:text="hhhhhh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/wraning_tx"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+
+        <Button
+            android:text="发   送"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/contact_cotent_relative"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:textSize="17sp"
+            android:background="@drawable/selector_setting_button"
+            android:id="@+id/send_btn" />
+
+        <Button
+            android:text="取   消"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/send_btn"
+            android:layout_alignEnd="@+id/send_btn"
+            android:layout_marginTop="20dp"
+            android:textSize="17sp"
+            android:textColor="@color/dialogColor"
+            android:background="@drawable/selector_setting_black_button"
+            android:id="@+id/cancel_btn" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

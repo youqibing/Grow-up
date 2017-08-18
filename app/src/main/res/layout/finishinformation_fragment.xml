@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <Button
+        android:text="返回"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/back" />
+
+    <RelativeLayout
+        android:id="@+id/change_photo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@+id/back"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/profilo_edit_avatar"
+            android:layout_centerInParent="true"/>
+
+        <com.example.floatingaction.CircularImageView.CircularImage
+            android:id="@+id/avatar"
+            android:layout_width="88dp"
+            android:layout_height="80dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_horizontal" />
+
+    </RelativeLayout>
+
+    <EditText
+        android:text=""
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/change_photo"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="70dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"
+        android:id="@+id/nickname" />
+
+
+    <Button
+        android:text="完成"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="42dp"
+        android:id="@+id/complete"
+        android:layout_below="@+id/sex"
+        android:layout_centerHorizontal="true" />
+
+
+    <Switch
+        android:text="性别(未知)"
+        android:id="@+id/sex"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nickname"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="39dp"
+        android:layout_alignRight="@+id/nickname"
+        android:layout_alignEnd="@+id/nickname" />
+
+
+</RelativeLayout>
